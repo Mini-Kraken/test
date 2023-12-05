@@ -1,0 +1,36 @@
+.green:checked {
+  background: var(--bs-green);
+  border-color: var(--bs-success);
+}
+
+.green:focus {
+  border-color: #9bfaa4;
+  outline: 0;
+  box-shadow: 0 0 0 .25rem rgba(81,244,55,0.25);
+}
+
+.bs-icon {
+  --bs-icon-size: .75rem;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--bs-icon-size);
+  width: calc(var(--bs-icon-size) * 2);
+  height: calc(var(--bs-icon-size) * 2);
+  color: var(--bs-primary);
+}
+
+.bs-icon-sm {
+  --bs-icon-size: 1rem;
+}
+
+.bs-icon.bs-icon-primary {
+  color: var(--bs-white);
+  background: var(--bs-success);
+}
+
+.bs-icon.bs-icon-rounded {
+  border-radius: .5rem;
+}
+
