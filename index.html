@@ -4,19 +4,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Calculador de Gasto Energetico</title>
+    <title>Calculadora Nutricional</title>
+    <meta name="theme-color" content="#9bfaa4">
     <link rel="canonical" href="https://nutri.arkanus.app/">
     <meta property="og:url" content="https://nutri.arkanus.app/">
-    <meta name="description" content="App Nutricional Projeto de TCC">
+    <meta name="twitter:title" content="Calculadora Nutricional">
+    <meta name="twitter:image" content="https://nutri.arkanus.app/assets/img/clipboard-image-5.webp">
+    <meta property="og:description" content="Uma calculadora de gasto energético com abordagens distintas e inovadoras em relação às ferramentas convencionais.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://nutri.arkanus.app/assets/img/clipboard-image-5.webp">
+    <meta name="description" content="Uma calculadora de gasto energético com abordagens distintas e inovadoras em relação às ferramentas convencionais.">
+    <meta property="og:title" content="Calculadora Nutricional">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Uma calculadora de gasto energético com abordagens distintas e inovadoras em relação às ferramentas convencionais.">
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
             "@type": "WebSite",
-            "name": "Brand",
+            "name": "Calculadora de Gasto Energético Estimado",
             "url": "https://nutri.arkanus.app"
         }
     </script>
+    <link rel="icon" type="image/svg+xml" sizes="207x150" href="assets/img/logoverde.svg">
+    <link rel="icon" type="image/svg+xml" sizes="207x150" href="assets/img/logoverde.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" sizes="207x150" href="assets/img/logoverde.svg">
+    <link rel="icon" type="image/svg+xml" sizes="207x150" href="assets/img/logoverde.svg" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/svg+xml" sizes="207x150" href="assets/img/logoverde.svg">
+    <link rel="icon" type="image/svg+xml" sizes="207x150" href="assets/img/logoverde.svg">
+    <link rel="icon" type="image/svg+xml" sizes="207x150" href="assets/img/logoverde.svg">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -66,10 +83,7 @@
         </div>
     </div>
     <nav class="navbar navbar-expand-md sticky-top bg-white shadow-lg py-3 navbar-light">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor">
-                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
-                        <path d="M336 128c-32 0-80.02 16.03-112 32.03c-32.01-16-79.1-32.02-111.1-32.03C32 128 .4134 210.5 .0033 288c-.5313 99.97 63.99 224 159.1 224c32 0 48-16 64-16c16 0 32 16 64 16c96 0 160.4-122.8 159.1-224C447.7 211.6 416 128 336 128zM320 32V0h-32C243.8 0 208 35.82 208 80v32h32C284.2 112 320 76.18 320 32z"></path>
-                    </svg></span><span>Projeto TCC</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="#"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><img class="p-1" src="assets/img/arkanus_logo.svg"></span><span>Projeto TCC</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" data-bs-target="#modal-1" data-bs-toggle="modal">Créditos</a></li>
@@ -81,7 +95,7 @@
         <div class="container">
             <div class="text-center mt-5">
                 <h1 class="fw-bold text-success pt-5">Calculadora de Gasto Energético Estimado</h1>
-                <p class="fw-bold text-dark mb-4 pt-0">Uma calculadora de gasto energético com abordagens distintas e inovadoras em relação às ferramentas convencionais.</p>
+                <p class="lead fw-semibold text-dark mb-4 pt-0">Uma calculadora de gasto energético com abordagens distintas e inovadoras em relação às ferramentas convencionais.</p>
                 <div class="col-md-8 col-xl-6 col-xxl-7 text-center text-md-start flex-grow-0 align-items-center align-content-center mx-auto">
                     <div>
                         <form id="calc" class="p-3 p-xl-4 pt-0 mt-0" action="">
@@ -96,13 +110,13 @@
                             </div>
                             <div class="d-flex flex-wrap"><label class="form-label me-2">Nível de atividade Fisica:</label>
                                 <div class="d-flex flex-wrap justify-content-lg-center mb-3">
-                                    <div class="form-check d-flex justify-content-start flex-wrap me-2" data-bs-toggle="tooltip" data-bss-tooltip="" title="Não pratica nenhum tipo de atividade fisica."><input class="form-check-input green me-1" type="radio" id="get1" checked="" name="get" value="1"><label class="form-check-label" for="sex-1">Sedentário</label></div>
-                                    <div class="form-check d-flex flex-row justify-content-start flex-wrap me-2" data-bs-toggle="tooltip" data-bss-tooltip="" title="Pratica atividades fisicas de maneira moderada"><input class="form-check-input green me-1" type="radio" id="get2" name="get" value="2"><label class="form-check-label" for="sex-2">Pouco ativo</label></div>
-                                    <div class="form-check d-flex justify-content-start flex-wrap me-2" data-bs-toggle="tooltip" data-bss-tooltip="" title="Pratica atividades fisicas de forma ativa"><input class="form-check-input green me-1" type="radio" id="get3" name="get" value="3"><label class="form-check-label" for="sex-3">Ativo</label></div>
-                                    <div class="form-check d-flex justify-content-start flex-wrap me-2" data-bs-toggle="tooltip" data-bss-tooltip="" title="Pritica atividades fisicas de maneira intensa"><input class="form-check-input green me-1" type="radio" id="get4" name="get" value="4"><label class="form-check-label" for="sex-3">Muito Ativo</label></div>
+                                    <div class="form-check d-flex justify-content-start flex-wrap me-2" data-bs-toggle="tooltip" data-bss-tooltip="" title="Este é o nível mais baixo de atividade física. Caracteriza-se por um estilo de vida predominantemente inativo, com pouca ou nenhuma atividade física regular. Pode estar associado a longos períodos de tempo sentado ou deitado, como no caso de trabalhos de escritório ou hábitos sedentários."><input class="form-check-input green me-1" type="radio" id="get1" checked="" name="get" value="1"><label class="form-check-label" for="sex-1">Sedentário</label></div>
+                                    <div class="form-check d-flex flex-row justify-content-start flex-wrap me-2" data-bs-toggle="tooltip" data-bss-tooltip="" title="Envolve atividades físicas leves ou moderadas realizadas regularmente. Inclui caminhadas, tarefas domésticas leves e outras formas suaves de exercício. Embora não seja tão intensivo quanto outros níveis, ainda contribui para a saúde geral."><input class="form-check-input green me-1" type="radio" id="get2" name="get" value="2"><label class="form-check-label" for="sex-2">Pouco ativo</label></div>
+                                    <div class="form-check d-flex justify-content-start flex-wrap me-2" data-bs-toggle="tooltip" data-bss-tooltip="" title="Envolvimento em atividades físicas moderadamente intensivas. Pode incluir exercícios aeróbicos, como corrida leve ou ciclismo, por pelo menos 150 minutos por semana, além de atividades que fortalecem os músculos."><input class="form-check-input green me-1" type="radio" id="get3" name="get" value="3"><label class="form-check-label" for="sex-3">Ativo</label></div>
+                                    <div class="form-check d-flex justify-content-start flex-wrap me-2" data-bs-toggle="tooltip" data-bss-tooltip="" title="Este nível é caracterizado por atividades físicas vigorosas e regulares. Pode incluir treinamento de resistência, exercícios de alta intensidade, esportes competitivos e outras formas de atividade que exigem um esforço substancial. Recomendado para aqueles que buscam melhorar a aptidão cardiovascular, construir massa muscular ou participar em esportes de alto rendimento."><input class="form-check-input green me-1" type="radio" id="get4" name="get" value="4"><label class="form-check-label" for="sex-3">Muito Ativo</label></div>
                                 </div>
                             </div>
-                            <div><button class="btn btn-success shadow d-block w-100" id="calcular" type="submit">Calcular</button></div>
+                            <div><button class="btn btn-success link-light shadow d-block w-100" id="calcular" type="submit">Calcular</button></div>
                         </form>
                     </div>
                 </div>
@@ -122,7 +136,7 @@
                 <div class="col d-md-flex align-items-md-end align-items-lg-start mb-5">
                     <div>
                         <h4 class="fw-bold">O Que é IMC?</h4>
-                        <p class="lead text-muted mb-4">Índice de Massa Corporal, é uma medida que avalia a relação entre o peso e a altura de uma pessoa. É uma ferramenta comumente utilizada para estimar se alguém tem um peso saudável em relação à sua altura. O cálculo do IMC é simples e é expresso como um único número.<br>A fórmula do IMC é a seguinte:<br>IMC = peso (em quilogramas) / altura (em metros ao quadrado<br>Após calcular o IMC, ele geralmente é interpretado de acordo com faixas predefinidas, que indicam se uma pessoa está abaixo do peso, com peso saudável, com sobrepeso ou obesa.</p>
+                        <p class="lead font-monospace text-muted mb-4">Índice de Massa Corporal, é uma medida que avalia a relação entre o peso e a altura de uma pessoa. É uma ferramenta comumente utilizada para estimar se alguém tem um peso saudável em relação à sua altura. O cálculo do IMC é simples e é expresso como um único número.<br>A fórmula do IMC é a seguinte:<br>IMC = peso (em quilogramas) / altura (em metros ao quadrado<br>Após calcular o IMC, ele geralmente é interpretado de acordo com faixas predefinidas, que indicam se uma pessoa está abaixo do peso, com peso saudável, com sobrepeso ou obesa.</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +145,7 @@
                 <div class="col d-md-flex align-items-md-end align-items-lg-center align-items-xxl-center mb-5">
                     <div>
                         <h4 class="fw-bold">O Que é Gasto Energético</h4>
-                        <p class="lead text-muted mb-4">O gasto energético na nutrição se refere à quantidade de energia que uma pessoa gasta diariamente para manter as funções vitais do corpo, realizar atividades físicas e realizar tarefas do dia a dia. Esse gasto é influenciado por vários fatores, como idade, sexo, nível de atividade física e metabolismo. Compreender o gasto energético é fundamental para a nutrição, pois permite determinar quantas calorias uma pessoa precisa consumir para manter um peso saudável, ganhar peso ou perder peso de maneira adequada, garantindo o equilíbrio entre a ingestão e o gasto de energia.</p><button class="btn btn-success shadow" type="button">Entenda como calculamos.</button>
+                        <p class="lead font-monospace text-muted mb-4">O gasto energético na nutrição se refere à quantidade de energia que uma pessoa gasta diariamente para manter as funções vitais do corpo, realizar atividades físicas e realizar tarefas do dia a dia. Esse gasto é influenciado por vários fatores, como idade, sexo, nível de atividade física e metabolismo. Compreender o gasto energético é fundamental para a nutrição, pois permite determinar quantas calorias uma pessoa precisa consumir para manter um peso saudável, ganhar peso ou perder peso de maneira adequada, garantindo o equilíbrio entre a ingestão e o gasto de energia.</p>
                     </div>
                 </div>
             </div>
@@ -187,6 +201,12 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container py-4">
+            <hr class="text-success">
+            <div class="d-flex justify-content-between align-items-center pt-3"><a href="https://arkanus.app" target="_blank" rel="author"><img width="30" height="30" src="assets/img/logoverde.svg"><span class="text-success ms-2">Powered by Arkanus</span></a></div>
+        </div>
+    </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
